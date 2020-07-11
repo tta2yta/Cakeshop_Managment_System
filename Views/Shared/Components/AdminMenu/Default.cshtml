@@ -1,0 +1,15 @@
+﻿@model IEnumerable<OnlineCakeShop.Components.AdminMenuItem>
+
+<li class="dropdown">
+    <a asp-controller="Admin"
+       asp-action="Index"
+       class="dropdown-toggle" data-toggle="dropdown">Admin<b class="caret"></b></a>
+    <ul class="dropdown-menu">
+        @foreach (var menuItem in Model)
+        {
+            <li>
+                <a asp-controller="Admin" asp-action=@menuItem.ActionValue>@menuItem.DisplayValue</a>
+            </li>
+        }
+    </ul>
+</li>

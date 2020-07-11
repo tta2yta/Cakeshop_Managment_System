@@ -1,0 +1,12 @@
+﻿@*@model IEnumerable<OnlineCakeShop.Model.Pie>*@
+@*@model OnlineCakeShop.Model.ViewModels.PieListViewModel*@
+@model PieListViewModel
+
+@* <h2>@ViewBag.CurrentTite</h2>*@
+<h2>@Model.CurrentCategory</h2>
+@* @foreach (var pie in Model)
+    {*@
+@foreach (var pie in Model.Pies)
+{
+<partial name="_PieCard" model=pie />
+}
