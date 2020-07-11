@@ -27,8 +27,17 @@ namespace OnlineCakeShop
         }
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<AppDbContext>(options =>
-            options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            /*services.AddDbContext<AppDbContext>(options =>
+            options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));*/
+
+
+            if (Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") == "Production")
+            {
+                services.AddDbContext<AppDbContext>(options =>
+            options.UseSqlServer(Configuration.GetConnectionString("MyDbConnection")));
+            }
+
+
             services.AddIdentity<IdentityUser, IdentityRole>(options =>
             {
                 options.Password.RequiredLength = 8;
@@ -54,6 +63,13 @@ namespace OnlineCakeShop
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+
+            using (var serviceScope = app.ApplicationServices.GetService<IServiceScopeFactory>().CreateScope())
+            {
+                var context = serviceScope.ServiceProvider.GetRequiredService<AppDbContext>();
+                context.Database.Migrate();
+            }
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
