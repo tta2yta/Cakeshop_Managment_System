@@ -27,15 +27,15 @@ namespace OnlineCakeShop
         }
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<AppDbContext>(options =>
-            options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            /*services.AddDbContext<AppDbContext>(options =>
+            options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));*/
 
 
-         /*   if (Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") == "Production")
+            if (Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") == "Production")
             {
                 services.AddDbContext<AppDbContext>(options =>
             options.UseSqlServer(Configuration.GetConnectionString("MyDbConnection")));
-            }*/
+            }
 
 
             services.AddIdentity<IdentityUser, IdentityRole>(options =>
@@ -65,11 +65,11 @@ namespace OnlineCakeShop
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
 
-         /*   using (var serviceScope = app.ApplicationServices.GetService<IServiceScopeFactory>().CreateScope())
+            using (var serviceScope = app.ApplicationServices.GetService<IServiceScopeFactory>().CreateScope())
             {
                 var context = serviceScope.ServiceProvider.GetRequiredService<AppDbContext>();
                 context.Database.Migrate();
-            }*/
+            }
 
             if (env.IsDevelopment())
             {
