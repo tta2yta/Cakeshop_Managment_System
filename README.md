@@ -4,10 +4,16 @@ An online cake shop using  ASP.NET MVC CORE 3.0
 Cake shop managment system developed with asp.net core 3.1 mvc web application. It keeps track all the transactions of different catagories of cakes. Moreover, allows users to regeiter and login inorder to perform transactions. Adminstrator can create user roles. The application is deployed to azure 
 for demo purpose.
 
+## Live Demo
+
+https://onlinecakeshop.azurewebsites.net/ 
+
 ## Desktop, Tablet, Mobile
 
 ![screenshot](./wwwroot/Images/ezgif.com-gif-maker.gif)
 
+## Database Schema
+![screenshot](./wwwroot/Images/schema_design.jpg)
 
 ## Built With
 
@@ -42,7 +48,8 @@ Feel free to check the <a href="https://github.com/tta2yta/Cakeshop_Managment_Sy
 Give a ⭐️ if you like this project!
 
 ## Acknowledgments
-
+- Gill Clereen  Twitter @gillclereen
 - https://docs.microsoft.com/en-us/aspnet/core/data/ef-rp/intro?view=aspnetcore-3.1&tabs=visual-studio
 - https://docs.microsoft.com/en-us/aspnet/core/data/ef-mvc/intro?view=aspnetcore-3.1
+- https://docs.microsoft.com/en-us/aspnet/core/security/authentication/identity?view=aspnetcore-3.1&tabs=visual-studio
 - https://www.stackoverflow.com/
