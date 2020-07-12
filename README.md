@@ -6,7 +6,7 @@ for demo purpose.
 
 ## Desktop, Tablet, Mobile
 
-![screenshot](./wwwroot/images/ezgif.com-gif-maker.gif)
+![screenshot](./wwwroot/Images/ezgif.com-gif-maker.gif)
 
 
 ## Built With
