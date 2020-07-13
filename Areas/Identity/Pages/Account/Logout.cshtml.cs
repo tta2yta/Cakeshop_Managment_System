@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
+using OnlineCakeShop.Model;
 
 namespace OnlineCakeShop.Areas.Identity.Pages.Account
 {
@@ -15,11 +16,13 @@ namespace OnlineCakeShop.Areas.Identity.Pages.Account
     {
         private readonly SignInManager<IdentityUser> _signInManager;
         private readonly ILogger<LogoutModel> _logger;
+       
 
         public LogoutModel(SignInManager<IdentityUser> signInManager, ILogger<LogoutModel> logger)
         {
             _signInManager = signInManager;
             _logger = logger;
+           
         }
 
         public void OnGet()
@@ -29,14 +32,19 @@ namespace OnlineCakeShop.Areas.Identity.Pages.Account
         public async Task<IActionResult> OnPost(string returnUrl = null)
         {
             await _signInManager.SignOutAsync();
-            _logger.LogInformation("User logged out.");
+           /* var items = _shoppingCart.GetShoppingCartItems();
+
+            _shoppingCart.ShoppingCartItems = items;*/
+            _logger.LogInformation("User logged out." + returnUrl.ToString());
+           // _shoppingCart.ShoppingCartItems.Clear();
             if (returnUrl != null)
             {
-                return LocalRedirect(returnUrl);
+                // return LocalRedirect(returnUrl);
+                return RedirectToPage("/Home/Index");
             }
             else
             {
-                return RedirectToPage();
+                return RedirectToPage("/Home/Index");
             }
         }
     }

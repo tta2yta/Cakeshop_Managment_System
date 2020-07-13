@@ -1,4 +1,12 @@
 ﻿@model ShoppingCartViewModel
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+@if (!SignInManager.IsSignedIn(User))// && User.IsInRole("Administrator"))
+{
+    Context.Response.Redirect(Url.Content("~/Home/Index"));
+}
 
 <h2>Your shopping cart</h2>
 <h4>Here are the delicious pies in your shopping cart.</h4>
