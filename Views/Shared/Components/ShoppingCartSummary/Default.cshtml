@@ -1,4 +1,7 @@
 ﻿@model ShoppingCartViewModel
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
 
 @if (Model.ShoppingCart.ShoppingCartItems.Count > 0)
 {
@@ -6,7 +9,11 @@
         <a>
             <span class="glyphicon glyphicon-shopping-cart"></span>
             <span id="cart-status">
-                @Model.ShoppingCart.ShoppingCartItems.Count
+                @if (SignInManager.IsSignedIn(User))// && User.IsInRole("Administrator"))
+                {
+                    @Model.ShoppingCart.ShoppingCartItems.Count
+                }
+
             </span>
         </a>
     </li>

@@ -27,15 +27,15 @@ namespace OnlineCakeShop
         }
         public void ConfigureServices(IServiceCollection services)
         {
-            /*services.AddDbContext<AppDbContext>(options =>
-            options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));*/
+            services.AddDbContext<AppDbContext>(options =>
+            options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
 
-            if (Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") == "Production")
-            {
-                services.AddDbContext<AppDbContext>(options =>
-            options.UseSqlServer(Configuration.GetConnectionString("MyDbConnection")));
-            }
+            /*   if (Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") == "Production")
+               {
+                   services.AddDbContext<AppDbContext>(options =>
+               options.UseSqlServer(Configuration.GetConnectionString("MyDbConnection")));
+               }*/
 
 
             services.AddIdentity<IdentityUser, IdentityRole>(options =>
