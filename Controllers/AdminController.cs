@@ -2,12 +2,15 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using OnlineCakeShop.Model.ViewModels;
 
 namespace OnlineCakeShop.Controllers
 {
+
+   // [Authorize(Roles = "Administrators")]
     public class AdminController : Controller
     {
         private UserManager<IdentityUser> _userManager;
