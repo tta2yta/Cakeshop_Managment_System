@@ -346,3 +346,5 @@ C:\Users\TED\source\repos\OnlineCakeShop - Copy\OnlineCakeShop\obj\Debug\netcore
 C:\Users\TED\source\repos\OnlineCakeShop - Copy\OnlineCakeShop\obj\Debug\netcoreapp3.1\OnlineCakeShop.dll
 C:\Users\TED\source\repos\OnlineCakeShop - Copy\OnlineCakeShop\obj\Debug\netcoreapp3.1\OnlineCakeShop.pdb
 C:\Users\TED\source\repos\OnlineCakeShop - Copy\OnlineCakeShop\obj\Debug\netcoreapp3.1\OnlineCakeShop.genruntimeconfig.cache
+C:\Users\TED\source\repos\OnlineCakeShop - Copy\OnlineCakeShop\obj\Debug\netcoreapp3.1\Razor\Views\Admin\AddNewRole.cshtml.g.cs
+C:\Users\TED\source\repos\OnlineCakeShop - Copy\OnlineCakeShop\obj\Debug\netcoreapp3.1\Razor\Views\Admin\RoleManagement.cshtml.g.cs
