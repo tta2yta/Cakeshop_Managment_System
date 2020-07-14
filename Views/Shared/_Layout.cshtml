@@ -34,7 +34,7 @@
                         @await Component.InvokeAsync("ShoppingCartSummary")
                         <li><a asp-controller="Contact" asp-action="Index">Contact Us</a></li>
 
-                        @if (SignInManager.IsSignedIn(User))// && User.IsInRole("Administrator"))
+                        @if (SignInManager.IsSignedIn(User) && User.IsInRole("Administrator"))
                         {
                             @await Component.InvokeAsync("AdminMenu")
                         }
