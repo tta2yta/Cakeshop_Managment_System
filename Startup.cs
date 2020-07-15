@@ -11,6 +11,7 @@ using Microsoft.Extensions.Hosting;
 using OnlineCakeShop.Model;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Authentication.Google;
 
 namespace OnlineCakeShop
 {
@@ -51,6 +52,18 @@ namespace OnlineCakeShop
             .AddDefaultTokenProviders()
                .AddEntityFrameworkStores<AppDbContext>();
 
+
+            services.AddAuthentication()
+     .AddGoogle("google", opt =>
+     {
+         var googleAuth = Configuration.GetSection("Authentication:Google");
+
+         opt.ClientId = googleAuth["ClientId"];
+         opt.ClientSecret = googleAuth["ClientSecret"];
+         opt.SignInScheme = IdentityConstants.ExternalScheme;
+     });
+
+
             services.AddScoped<IPieRepository, PieRepository>();
             services.AddScoped<ICategoryRepository, CategoryRepository>();
             services.AddScoped<IOrderRepository, OrderRepository>();
@@ -84,6 +97,13 @@ namespace OnlineCakeShop
             app.UseRouting();
             app.UseAuthentication();
             app.UseAuthorization();
+
+        /*      app.UseGoogleAuthentication(new GoogleOptions
+            {
+                ClientId = "351865068992-9n45989ahb0ot26m10clusj206a7ub4n.apps.googleusercontent.com",
+                ClientSecret = "ERD5Lvjf8TpGUUnuyTGv27vo"
+            });
+*/
             app.UseEndpoints(endpoints =>
             {
 

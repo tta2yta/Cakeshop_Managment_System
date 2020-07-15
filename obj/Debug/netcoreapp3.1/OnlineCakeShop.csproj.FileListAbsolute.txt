@@ -300,9 +300,6 @@ C:\Users\TED\source\repos\OnlineCakeShop - Copy\OnlineCakeShop\bin\Debug\netcore
 C:\Users\TED\source\repos\OnlineCakeShop - Copy\OnlineCakeShop\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\TED\source\repos\OnlineCakeShop - Copy\OnlineCakeShop\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\TED\source\repos\OnlineCakeShop - Copy\OnlineCakeShop\obj\Debug\netcoreapp3.1\OnlineCakeShop.csprojAssemblyReference.cache
-C:\Users\TED\source\repos\OnlineCakeShop - Copy\OnlineCakeShop\obj\Debug\netcoreapp3.1\OnlineCakeShop.csproj.CoreCompileInputs.cache
-C:\Users\TED\source\repos\OnlineCakeShop - Copy\OnlineCakeShop\obj\Debug\netcoreapp3.1\OnlineCakeShop.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\TED\source\repos\OnlineCakeShop - Copy\OnlineCakeShop\obj\Debug\netcoreapp3.1\OnlineCakeShop.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\TED\source\repos\OnlineCakeShop - Copy\OnlineCakeShop\obj\Debug\netcoreapp3.1\OnlineCakeShop.RazorAssemblyInfo.cache
 C:\Users\TED\source\repos\OnlineCakeShop - Copy\OnlineCakeShop\obj\Debug\netcoreapp3.1\OnlineCakeShop.RazorAssemblyInfo.cs
 C:\Users\TED\source\repos\OnlineCakeShop - Copy\OnlineCakeShop\obj\Debug\netcoreapp3.1\OnlineCakeShop.AssemblyInfoInputs.cache
@@ -352,3 +349,7 @@ C:\Users\TED\source\repos\OnlineCakeShop - Copy\OnlineCakeShop\obj\Debug\netcore
 C:\Users\TED\source\repos\OnlineCakeShop - Copy\OnlineCakeShop\obj\Debug\netcoreapp3.1\Razor\Views\Admin\DeleteUserFromRole.cshtml.g.cs
 C:\Users\TED\source\repos\OnlineCakeShop - Copy\OnlineCakeShop\obj\Debug\netcoreapp3.1\Razor\Views\Admin\EditRole.cshtml.g.cs
 C:\Users\TED\source\repos\OnlineCakeShop - Copy\OnlineCakeShop\obj\Debug\netcoreapp3.1\Razor\Views\Admin\Index1.cshtml.g.cs
+C:\Users\TED\source\repos\OnlineCakeShop - Copy\OnlineCakeShop\obj\Debug\netcoreapp3.1\OnlineCakeShop.csproj.CoreCompileInputs.cache
+C:\Users\TED\source\repos\OnlineCakeShop - Copy\OnlineCakeShop\obj\Debug\netcoreapp3.1\OnlineCakeShop.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\TED\source\repos\OnlineCakeShop - Copy\OnlineCakeShop\obj\Debug\netcoreapp3.1\OnlineCakeShop.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\TED\source\repos\OnlineCakeShop - Copy\OnlineCakeShop\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.Google.dll
