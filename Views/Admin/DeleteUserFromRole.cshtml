@@ -1,9 +1,8 @@
-<<<<<<< HEAD
-﻿@model UserRoleViewModel
+@model UserRoleViewModel
 
 <h2>Delete user from role</h2>
 
-<form asp-controller="Admin"  method="post" asp-action="DeleteUserFromRole">
+<form asp-controller="Admin" asp-action="DeleteUserFromRole">
     <input type="hidden" name="roleId" value="@Model.RoleId" />
     <select asp-for="UserId"
             asp-items="@(new SelectList(Model.Users, "Id", "UserName"))">
@@ -13,10 +12,4 @@
 </form>
 
 <a asp-action="RoleManagement" class="btn btn-primary">Done</a>
-=======
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
->>>>>>> 9a7f0286f292e435d88dc42f17125ae5a20042af
+

@@ -220,12 +220,7 @@ namespace OnlineCakeShop.Controllers
 
 
 
-        //Users in roles
-<<<<<<< HEAD
-       
-=======
-
->>>>>>> 9a7f0286f292e435d88dc42f17125ae5a20042af
+ 
         public async Task<IActionResult> AddUserToRole(string roleId)
         {
             var role = await _roleManager.FindByIdAsync(roleId);
@@ -245,7 +240,7 @@ namespace OnlineCakeShop.Controllers
 
             return View(addUserToRoleViewModel);
         }
-<<<<<<< HEAD
+
 
 
         [HttpPost]
@@ -312,8 +307,6 @@ namespace OnlineCakeShop.Controllers
 
             return View(userRoleViewModel);
         }
-=======
->>>>>>> 9a7f0286f292e435d88dc42f17125ae5a20042af
 
     }
 }
