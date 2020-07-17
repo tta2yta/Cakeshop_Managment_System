@@ -348,7 +348,10 @@ C:\Users\TED\source\repos\OnlineCakeShop - Copy\OnlineCakeShop\obj\Debug\netcore
 C:\Users\TED\source\repos\OnlineCakeShop - Copy\OnlineCakeShop\obj\Debug\netcoreapp3.1\OnlineCakeShop.genruntimeconfig.cache
 C:\Users\TED\source\repos\OnlineCakeShop - Copy\OnlineCakeShop\obj\Debug\netcoreapp3.1\Razor\Views\Admin\AddNewRole.cshtml.g.cs
 C:\Users\TED\source\repos\OnlineCakeShop - Copy\OnlineCakeShop\obj\Debug\netcoreapp3.1\Razor\Views\Admin\RoleManagement.cshtml.g.cs
+<<<<<<< HEAD
 C:\Users\TED\source\repos\OnlineCakeShop - Copy\OnlineCakeShop\obj\Debug\netcoreapp3.1\Razor\Views\Admin\AddUserToRole.cshtml.g.cs
 C:\Users\TED\source\repos\OnlineCakeShop - Copy\OnlineCakeShop\obj\Debug\netcoreapp3.1\Razor\Views\Admin\DeleteUserFromRole.cshtml.g.cs
 C:\Users\TED\source\repos\OnlineCakeShop - Copy\OnlineCakeShop\obj\Debug\netcoreapp3.1\Razor\Views\Admin\EditRole.cshtml.g.cs
 C:\Users\TED\source\repos\OnlineCakeShop - Copy\OnlineCakeShop\obj\Debug\netcoreapp3.1\Razor\Views\Admin\Index1.cshtml.g.cs
+=======
+>>>>>>> 9a7f0286f292e435d88dc42f17125ae5a20042af
