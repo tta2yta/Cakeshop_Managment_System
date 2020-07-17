@@ -355,3 +355,4 @@ C:\Users\TED\source\repos\OnlineCakeShop - Copy\OnlineCakeShop\bin\Debug\netcore
 C:\Users\TED\source\repos\OnlineCakeShop - Copy\OnlineCakeShop\obj\Debug\netcoreapp3.1\OnlineCakeShop.csproj.CoreCompileInputs.cache
 C:\Users\TED\source\repos\OnlineCakeShop - Copy\OnlineCakeShop\obj\Debug\netcoreapp3.1\OnlineCakeShop.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\TED\source\repos\OnlineCakeShop - Copy\OnlineCakeShop\obj\Debug\netcoreapp3.1\OnlineCakeShop.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\TED\source\repos\OnlineCakeShop - Copy\OnlineCakeShop\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_footerPartial.cshtml.g.cs
