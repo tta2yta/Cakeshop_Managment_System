@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Na79vqp5zdtZFve+97ik8aJdaARA1RN9BtHYSS5k/j5mViRl+rtuzfAfdqB74YDGTfWMPOZzR6Fp9yR8l2gDig==",
+  "dgSpecHash": "lSmS9PNkKFTu0Mw/W8sbF1Oe3Z1g0Xs1K3rtSvAXWamjt3XOAI+LGQQgjUgYFIH0Tq60bCczh58MQbIrhFS2Lg==",
   "success": true,
   "projectFilePath": "C:\\Users\\TED\\source\\repos\\OnlineCakeShop - Copy\\OnlineCakeShop\\OnlineCakeShop.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\TED\\.nuget\\packages\\microsoft.aspnetcore.authentication.facebook\\3.1.6\\microsoft.aspnetcore.authentication.facebook.3.1.6.nupkg.sha512",
     "C:\\Users\\TED\\.nuget\\packages\\microsoft.aspnetcore.authentication.google\\3.1.6\\microsoft.aspnetcore.authentication.google.3.1.6.nupkg.sha512",
     "C:\\Users\\TED\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.3\\microsoft.aspnetcore.cryptography.internal.3.1.3.nupkg.sha512",
     "C:\\Users\\TED\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\3.1.3\\microsoft.aspnetcore.cryptography.keyderivation.3.1.3.nupkg.sha512",

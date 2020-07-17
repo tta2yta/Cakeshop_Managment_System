@@ -61,7 +61,10 @@ namespace OnlineCakeShop
          opt.ClientId = googleAuth["ClientId"];
          opt.ClientSecret = googleAuth["ClientSecret"];
          opt.SignInScheme = IdentityConstants.ExternalScheme;
-     });
+     }).AddFacebook("facebook", opt => {
+         opt.AppId = "3600317576664229";
+         opt.AppSecret = "ef07c220fd30460a3cf6b3920e09107c";
+         });
 
 
             services.AddScoped<IPieRepository, PieRepository>();
