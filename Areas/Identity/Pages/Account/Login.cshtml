@@ -1,6 +1,6 @@
 ﻿@page
 @model LoginModel
-
+@inject SignInManager<IdentityUser> SignInManager
 @{
     ViewData["Title"] = "Log in";
 }
@@ -50,23 +50,23 @@
             <h4>Use another service to log in.</h4>
             <hr />
             @{
-                if ((Model.ExternalLogins?.Count ?? 0) == 0)
+                var providers = (await SignInManager.GetExternalAuthenticationSchemesAsync()).ToList();
+                if (!providers.Any())
                 {
                     <div>
                         <p>
-                            There are no external authentication services configured. See <a href="https://go.microsoft.com/fwlink/?LinkID=532715">this article</a>
-                            for details on setting up this ASP.NET application to support logging in via external services.
+                            We couldn't find any external provider
                         </p>
                     </div>
                 }
                 else
                 {
-                    <form id="external-account" asp-page="./ExternalLogin" asp-route-returnUrl="@Model.ReturnUrl" method="post" class="form-horizontal">
+                    <form asp-controller="Account" asp-action="ExternalLogin" asp-route-returnurl="@ViewData["ReturnUrl"]" method="post" class="form-horizontal">
                         <div>
                             <p>
-                                @foreach (var provider in Model.ExternalLogins)
+                                @foreach (var provider in providers)
                                 {
-                                    <button type="submit" class="btn btn-default" name="provider" value="@provider.Name" title="Log in using your @provider.DisplayName account">@provider.DisplayName</button>
+                                    <input type="submit" class="btn btn-info" value="@provider.Name" name="provider" />
                                 }
                             </p>
                         </div>
