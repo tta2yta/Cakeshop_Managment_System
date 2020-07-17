@@ -353,3 +353,4 @@ C:\Users\TED\source\repos\OnlineCakeShop - Copy\OnlineCakeShop\obj\Debug\netcore
 C:\Users\TED\source\repos\OnlineCakeShop - Copy\OnlineCakeShop\obj\Debug\netcoreapp3.1\OnlineCakeShop.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\TED\source\repos\OnlineCakeShop - Copy\OnlineCakeShop\obj\Debug\netcoreapp3.1\OnlineCakeShop.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\TED\source\repos\OnlineCakeShop - Copy\OnlineCakeShop\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.Google.dll
+C:\Users\TED\source\repos\OnlineCakeShop - Copy\OnlineCakeShop\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login1.cshtml.g.cs
