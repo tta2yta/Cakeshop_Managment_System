@@ -5,9 +5,9 @@
 
 @if (Model.ShoppingCart.ShoppingCartItems.Count > 0)
 {
-    <li>
+    <li class="nav-link">
         <a>
-            <span class="glyphicon glyphicon-shopping-cart"></span>
+            <span class="fa fa-shopping-cart"></span>
             <span id="cart-status">
                 @if (SignInManager.IsSignedIn(User))// && User.IsInRole("Administrator"))
                 {

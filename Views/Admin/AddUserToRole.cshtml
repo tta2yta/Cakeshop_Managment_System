@@ -2,7 +2,11 @@
 
 <h2>Add user to role</h2>
 
+<<<<<<< HEAD
 <form asp-controller="Admin" asp-action="AddUserToRole">
+=======
+<form asp-controller="Admin"   asp-action="AddUserToRole">
+>>>>>>> master
     <input type="hidden" name="roleId" value="@Model.RoleId" />
     <select asp-for="UserId"
             asp-items="@(new SelectList(Model.Users, "Id", "UserName"))">
@@ -12,3 +16,7 @@
 </form>
 
 <a asp-action="RoleManagement" class="btn btn-primary">Done</a>
+<<<<<<< HEAD
+=======
+
+>>>>>>> master

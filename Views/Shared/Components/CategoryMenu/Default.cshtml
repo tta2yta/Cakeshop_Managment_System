@@ -1,20 +1,42 @@
 ﻿@model IEnumerable<Category>
-
-<li class="dropdown">
-    <a asp-controller="Pie"
-       asp-action="Index"
-       class="dropdown-toggle" data-toggle="dropdown">Pies<b class="caret"></b></a>
-    <ul class="dropdown-menu">
-        @foreach (var category in Model)
-        {
+@*
+    <li class="nav-link ">
+        <a asp-controller="Pie"
+           asp-action="Index"
+           class="dropdown-toggle" data-toggle="dropdown">Pies<b class="caret"></b></a>
+        <ul class="dropdown-menu">
+            @foreach (var category in Model)
+            {
+                <li>
+                    <a asp-controller="Pie" asp-action="List"
+                       asp-route-category="@category.CategoryName">@category.CategoryName</a>
+                </li>
+            }
+            <li class="divider"></li>
             <li>
-                <a asp-controller="Pie" asp-action="List"
-                   asp-route-category="@category.CategoryName">@category.CategoryName</a>
+                <a asp-controller="Pie" asp-action="List" asp-route-Category="">View all pies</a>
             </li>
-        }
-        <li class="divider"></li>
-        <li>
-            <a asp-controller="Pie" asp-action="List" asp-route-Category="">View all pies</a>
-        </li>
-    </ul>
-</li>
+        </ul>
+    </li>
+*@
+
+    <li class="nav-link ">
+        <div class="dropdown show">
+            <a asp-controller="Pie"
+               asp-action="Index" class="dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                Pies
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+
+
+                @foreach (var category in Model)
+                {
+                    <a class="dropdown-item" asp-controller="Pie" asp-action="List"
+                       asp-route-category="@category.CategoryName">@category.CategoryName</a>
+
+                }
+                <a class="dropdown-menu" asp-controller="Pie" asp-action="List" asp-route-Category="">View all pies</a>
+            </div>
+        </div>
+    </li>

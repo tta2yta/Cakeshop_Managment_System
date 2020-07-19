@@ -4,8 +4,28 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 
+
+html {
+    margin: 0;
+    padding: 0;
+    max-height: 100vh;
+}
+
 body {
-    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    margin: 0;
+    padding: 0;
+    background: rgba(1, 1, 1, 0);
+    height: 100%;
+}
+
+
+.container{
+   
+    padding:0px;
+}
+
+.main {
+   /*padding-top: 70px; *//* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
     background-image: url('/images/pattern.png');
     background-repeat: repeat;
     font-family: 'Source Sans Pro', sans-serif;
@@ -38,19 +58,32 @@ body {
     width: 100%;
 }
 
-.addToCart {
-    padding-right: 10px;
-    padding-left: 10px;
+
+
+    .thumbnail {
+    padding: 0;
+    margin-bottom:70px;
+    /*border: solid 1mm rgba(0, 0, 0, 0.12);*/
 }
 
-.thumbnail {
-    padding: 0;
-}
+    .addToCart{
+        margin-top:-60px;
+    }
 
     .thumbnail .caption-full {
         padding: 9px;
         color: #333;
     }
+
+.col-md-12 .lead > img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.caption h3 {
+    font-size: 1.2em;
+}
 
 footer {
     margin: 50px 0;
@@ -60,19 +93,26 @@ footer {
     background-image: none;
 }
 
-.navbar-inverse {
-    background-color: #a593c2;
-    border-color: #a593c2;
-}
-
-.nav.navbar-nav.navbar-right li a {
-    color: white;
-    font-size: 1.2em;
-}
-
-.navbar .nav > li > a {
+li > a.nav-link {
     font-size: 1.2em;
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    color: red;
+    margin-left:20px;
+}
+
+
+li.nav-link a {
+    font-size: 1.2em;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    color: white;
+}
+
+.description{
+    margin-bottom:10px;
+}
+
+.dropdown-menu .dropdown-item {
+    background-color: #292c2f;
     color: white;
 }
 
@@ -93,6 +133,202 @@ footer {
 }
 
 .btn {
-    background-color: #fcaeae !important;
+   /* background-color: #fcaeae !important;*/
     border-color: #fba1a1 !important;
+}
+
+li .dropdown .show{
+    background-color:inherit;
+}
+/*footer styling*/
+footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    margin-bottom:-60px;
+}
+
+.footer-distributed {
+    background-color: #292c2f;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 55px 50px;
+    margin-top: 80px;
+}
+
+
+
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right {
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .footer-distributed .footer-left {
+        width: 40%;
+    }
+
+    .footer-distributed h3 {
+        color: #ffffff;
+        font: normal 36px 'Cookie', cursive;
+        margin: 0;
+    }
+
+        .footer-distributed h3 span {
+            color: #5383d3;
+        }
+
+
+    .footer-distributed .footer-links {
+        color: #ffffff;
+        margin: 20px 0 12px;
+        padding: 0;
+    }
+
+        .footer-distributed .footer-links a {
+            display: inline-block;
+            line-height: 1.8;
+            text-decoration: none;
+            color: inherit;
+        }
+
+    .footer-distributed .footer-company-name {
+        color: #8f9296;
+        font-size: 14px;
+        font-weight: normal;
+        margin: 0;
+    }
+
+
+    .footer-distributed .footer-center {
+        width: 35%;
+    }
+
+        .footer-distributed .footer-center i {
+            background-color: #33383b;
+            color: #ffffff;
+            font-size: 25px;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 42px;
+            margin: 10px 15px;
+            vertical-align: middle;
+        }
+
+            .footer-distributed .footer-center i.fa-envelope {
+                font-size: 17px;
+                line-height: 38px;
+            }
+
+        .footer-distributed .footer-center p {
+            display: inline-block;
+            color: #ffffff;
+            vertical-align: middle;
+            margin: 0;
+        }
+
+            .footer-distributed .footer-center p span {
+                display: block;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 2;
+            }
+
+            .footer-distributed .footer-center p a {
+                color: #5383d3;
+                text-decoration: none;
+                
+            }
+
+    .footer-distributed .footer-right {
+        width: 20%;
+    }
+
+    .footer-distributed .footer-company-about {
+        line-height: 20px;
+        color: #92999f;
+        font-size: 13px;
+        font-weight: normal;
+        margin: 0;
+    }
+
+        .footer-distributed .footer-company-about span {
+            display: block;
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+    .footer-distributed .footer-icons {
+        margin-top: 25px;
+    }
+
+        .footer-distributed .footer-icons a {
+            display: inline-block;
+            width: 35px;
+            height: 35px;
+            cursor: pointer;
+            background-color: #33383b;
+            border-radius: 2px;
+            font-size: 20px;
+            color: #ffffff;
+            text-align: center;
+            line-height: 35px;
+            margin-right: 3px;
+            margin-bottom: 5px;
+        }
+.footer-title-logo {
+    
+    color: white;
+}
+
+@media (max-width: 1000px) {
+    .footer-title-logo {
+        font-size: 1.5em;
+        color: white;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .footer-title-logo {
+        font-size: 2em;
+        color: white;
+    }
+
+    .footer-distributed {
+        font: bold 14px sans-serif;
+    }
+
+        .footer-distributed .footer-left,
+        .footer-distributed .footer-center,
+        .footer-distributed .footer-right {
+            display: block;
+            width: 100%;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+            .footer-distributed .footer-center i {
+                margin-left: 0;
+            }
+            
+
+
+    p > img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .label-login{
+        font-size:1.2em;
+    }
 }
