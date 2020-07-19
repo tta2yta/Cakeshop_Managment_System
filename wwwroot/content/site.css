@@ -4,6 +4,26 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 
+
+html {
+    margin: 0;
+    padding: 0;
+    max-height: 100vh;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: rgba(1, 1, 1, 0);
+    height: 100%;
+}
+
+
+.container{
+   
+    padding:0px;
+}
+
 .main {
    /*padding-top: 70px; *//* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
     background-image: url('/images/pattern.png');
@@ -38,19 +58,32 @@
     width: 100%;
 }
 
-.addToCart {
-    padding-right: 10px;
-    padding-left: 10px;
+
+
+    .thumbnail {
+    padding: 0;
+    margin-bottom:70px;
+    /*border: solid 1mm rgba(0, 0, 0, 0.12);*/
 }
 
-.thumbnail {
-    padding: 0;
-}
+    .addToCart{
+        margin-top:-60px;
+    }
 
     .thumbnail .caption-full {
         padding: 9px;
         color: #333;
     }
+
+.col-md-12 .lead > img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.caption h3 {
+    font-size: 1.2em;
+}
 
 footer {
     margin: 50px 0;
@@ -60,19 +93,26 @@ footer {
     background-image: none;
 }
 
-.navbar-inverse {
-    background-color: #a593c2;
-    border-color: #a593c2;
-}
-
-.nav.navbar-nav.navbar-right li a {
-    color: white;
-    font-size: 1.2em;
-}
-
-.navbar .nav > li > a {
+li > a.nav-link {
     font-size: 1.2em;
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    color: red;
+    margin-left:20px;
+}
+
+
+li.nav-link a {
+    font-size: 1.2em;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    color: white;
+}
+
+.description{
+    margin-bottom:10px;
+}
+
+.dropdown-menu .dropdown-item {
+    background-color: #292c2f;
     color: white;
 }
 
@@ -93,16 +133,19 @@ footer {
 }
 
 .btn {
-    background-color: #fcaeae !important;
+   /* background-color: #fcaeae !important;*/
     border-color: #fba1a1 !important;
 }
 
-
+li .dropdown .show{
+    background-color:inherit;
+}
 /*footer styling*/
-
 footer {
-   
+    position: relative;
+    left: 0;
     bottom: 0;
+    margin-bottom:-60px;
 }
 
 .footer-distributed {
@@ -115,6 +158,8 @@ footer {
     padding: 55px 50px;
     margin-top: 80px;
 }
+
+
 
     .footer-distributed .footer-left,
     .footer-distributed .footer-center,
@@ -239,9 +284,25 @@ footer {
             margin-right: 3px;
             margin-bottom: 5px;
         }
+.footer-title-logo {
+    
+    color: white;
+}
+
+@media (max-width: 1000px) {
+    .footer-title-logo {
+        font-size: 1.5em;
+        color: white;
+    }
+}
 
 
-@media (max-width: 880px) {
+@media (max-width: 768px) {
+
+    .footer-title-logo {
+        font-size: 2em;
+        color: white;
+    }
 
     .footer-distributed {
         font: bold 14px sans-serif;
@@ -259,5 +320,15 @@ footer {
             .footer-distributed .footer-center i {
                 margin-left: 0;
             }
+            
 
+
+    p > img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .label-login{
+        font-size:1.2em;
+    }
 }
